@@ -107,6 +107,14 @@ body {
 	mix-blend-mode: lighten;
 	transform: translateZ(0);
 }
+#main-image {  
+	position: absolute;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%); /* 使用转换来将canvas的左上角移动到中心 */  
+	/* 在这里添加#main-image canvas特有的样式 */  
+  
+  }
 
 .controls {
 	position: absolute;
@@ -360,4 +368,17 @@ body {
 	transform: scale(1, 1);
 	transition-timing-function: ease-out;
 	transition-duration: 0.4s;
+}
+/* styles.css */  
+.image-container {  
+    width: 500px;  
+    height: 300px;  
+    overflow: hidden;  
+    position: relative;  
+}  
+  
+#slideshow {  
+    width: 100%;  
+    height: auto;  
+    transition: opacity 1s ease-in-out;  
 }

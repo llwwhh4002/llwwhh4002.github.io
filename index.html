@@ -7,13 +7,23 @@
 		<meta name="mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="theme-color" content="#000000" />
-		<link rel="shortcut icon" type="image/png" href="./images/favicon.jpg" />
-		<link rel="icon" type="image/png" href="./images/favicon.jpg" />
-		<link rel="apple-touch-icon-precomposed" href="./images/favicon.jpg" />
+		<link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+		<link rel="icon" type="image/png" href="./images/favicon.png" />
+		<link rel="apple-touch-icon-precomposed" href="./images/favicon.png" />
 		<meta name="msapplication-TileColor" content="#000000" />
-		<meta name="msapplication-TileImage" content="./images/favicon.jpg" />
+		<meta name="msapplication-TileImage" content="./images/favicon.png" />
 		<link href="./fonts/css.css" rel="stylesheet" />
 		<link rel="stylesheet" href="./css/style.css" />
+		<style>
+			footer {
+				background-color:black;
+			    color:white;
+			    clear:both;
+			    text-align:center;
+			    padding:5px;
+		    }
+		</style>
+
 	</head>
 	<body>
 		<!-- partial:index.partial.html -->
@@ -40,6 +50,8 @@
 				</symbol>
 			</svg>
 		</div>
+
+
 		<!-- App -->
 		<div class="container">
 			<div class="loading-init">
@@ -50,6 +62,7 @@
 				<div class="canvas-container">
 					<canvas id="trails-canvas"> </canvas>
 					<canvas id="main-canvas"> </canvas>
+					<canvas id="main-image" width="500" height="500"></canvas>  
 				</div>
 				<div class="controls">
 					<div class="btn pause-btn">
@@ -135,12 +148,16 @@
 				</div>
 			</div>
 		</div>
+			
+
 
 		<!-- partial -->
 		<script src="./js/fscreen.js"></script>
 		<script src="./js/Stage.js"></script>
 		<script src="./js/MyMath.js"></script>
 		<script src="./js/script.js"></script>
-	</body>
+		<script src="./js/image.js"></script>
+	</body>  
+
 </html>
 
